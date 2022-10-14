@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   
+      
+   
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>  
+    <link rel="stylesheet" href="Giang/main.css">
+    <title>MẠNG CẢM BIẾN</title>
+    
+  </head>
+  <body>
+    <div class="row-8" style=" background-image: linear-gradient(to right,#fa709a,#fee140);height:100px; height:200px ;">
+      <h1 class="text-danger text-center "> MCB </h1>
+      </div>
+   
+    <div class="container-fluid">
+      <div class="row" style="height:200px;border:0px solid rgb(14, 14, 14);">
+        <div class="col-sm-4 pt-2  " id="NHIETDO" style="border-right:0px solid rgb(16, 16, 16);background-color:green;">
+          <h2 style="text-align:center;">NHIỆT ĐỘ</h2>
+          <h3 class="temp" style="text-align:center;">50</h3>
+          
+          </div>
+          <div class="col-sm-4 pt-2" id="DOAM" style="border-right:0px solid black;background-color:pink;">
+              <h2 style="text-align:center;">ĐỘ ẨM</h2>
+              <h3 class="hum" style="text-align:center;">50</h3>
+              
+          </div>
+          <div class="col-sm-4 pt-2" style="background-color:gray;" id="ANHSANG"> 
+              <h2 style="text-align:center;">ÁNH SÁNG</h2>
+              <h3  class="light" style="text-align:center;">50</h3>
+              
+          </div>
+          </div>
+
+    </div>
+    <div class="row">
+      <div class="col-md-8 dothi" style="text-align:center ;">
+        <h1>Đồ Thị</h1>
+        <canvas id="canvas"></canvas>
+      </div>
+         <div class="col-md-4 bg-primary ">
+                
+                    <div>
+                        <h2 class="bg-primary text-white text-center rounded">LED</h2>
+                        <button class="btn text-dark border-dark on-led" type="submit"
+                            onclick="ChuyenMauButtonLed1()">On</button>
+                        <img src="https://www.w3schools.com/js/pic_bulboff.gif" alt="" width="20%" class="lightImg">
+                        <button class="btn text-dark border-dark off-led" type="submit"
+                            onclick="ChuyenMauButtonLed2()">Off</button>
+                    </div>
+                  
+                </div>
+                
+           
+    </div>            
+            
+      
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>  
+    <script src="Giang/index.js"></script>
+    
+    
+  </body>
+</html>
